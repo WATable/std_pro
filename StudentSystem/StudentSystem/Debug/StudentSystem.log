@@ -1,0 +1,3 @@
+﻿  main.c
+f:\student\studentsystem\studentsystem\window.h(25): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+  StudentSystem.vcxproj -> F:\student\StudentSystem\Debug\StudentSystem.exe
