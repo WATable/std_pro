@@ -4,6 +4,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct Student
+{
+	char name[64];
+
+	int  age;
+}Student, *StudentStr;
+
+void SetStdInfo(Student * info,char name[] ,int age) {
+
+	(*info).age = age;
+
+	*(*info).name = *name;
+}
 
 
 //
@@ -18,8 +31,10 @@ void TestVoid()
 
 int main()
 {
-	TestVoid();
+	//TestVoid();
 
+	Student stu = {.age = 0,.name = "snake"};
+	printf("============>>>  %s", stu.name);
 	system("pause");
 	return EXIT_SUCCESS;
 }
