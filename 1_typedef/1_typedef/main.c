@@ -12,17 +12,14 @@ typedef struct Student
 	int  * age;
 }STUDENT;
 
-
-
-
 int main() 
 {
 	int a = 10000;
 
 	//printf("============%d",a);
-	STUDENT std = { "snake",a};
+	STUDENT std = { "snake",&a};
 
-	printf("value %s   %d" ,std.name,10000);
+	printf("value %s   %d" ,std.name,*std.age);
 	system("pause");
 	return EXIT_SUCCESS;
 }
